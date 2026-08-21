@@ -1,11 +1,17 @@
 def soma(a,b):
     return a+b;
 
+def subtracao(a,b):
+    return a-b;
+
 if __name__ == "__main__":
     print("Calculadora inicial: ")
     print()
     a = int(input("Digite um número: "))
     b = int(input("Digite outro número: "))
+    resultSoma = soma(a,b)
+    resultSubtracao = subtracao(a,b)
     print()
-    result = soma(a,b)
-    print("Resultado: " + result)
+    
+    print("Soma: " + str(resultSoma))
+    print("Subtracao: " + str(resultSubtracao))
